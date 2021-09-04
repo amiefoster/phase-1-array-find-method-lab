@@ -62,12 +62,22 @@ const record = [
 
 
 
+// function superbowlWin(){
+//   record.find(function(item){
+//     if (item.result === 'W'){
+//       return item.year    }
+//   })
+// }
+
 function superbowlWin(){
   record.find(function(item){
     if (item.result === 'W'){
-      return item.year    }
-  })
+      return item.year
+    }
+  }}
 }
+
+
 
 function sadReality(){
   record.find(function(item){
