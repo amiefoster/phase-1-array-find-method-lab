@@ -62,40 +62,9 @@ const record = [
 
 
 
-// function superbowlWin(){
-//   record.find(function(item){
-//     if (item.result === 'W'){
-//       return item.year    }
-//   })
-// }
-
-function superbowlWin(){
-  record.find(function(item){
-    if (item.result === 'W'){
-      return item.year
+  function superbowlWin(array){
+    let winningYear = array.find(array => array.result === 'W');
+    if(winningYear) {
+      return winningYear.year;
     }
-  }}
-}
-
-
-
-function sadReality(){
-  record.find(function(item){
-    if (item.result === 'N/A'){
-      return 'undefined'
-    }
-  })
-}
-
-
-
-//another way using an anynomous function below
-
-// const superbowlWin = record.find(function(item){
-//   if (item.result === 'W'){
-//   return item.year
-//   }
-// })
-
-
-
+  }
